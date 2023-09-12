@@ -1,0 +1,122 @@
+[
+  {
+    "firstName": "Tom",
+    "lastName": "Hanks",
+    "rating": 1,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Robert",
+    "lastName": "De Niro",
+    "rating": 12,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Meryl",
+    "lastName": "Streep",
+    "rating": 5,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Kate",
+    "lastName": "Winslet",
+    "rating": 22,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Leonardo",
+    "lastName": "DiCaprio",
+    "rating": 6,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Brad",
+    "lastName": "Pitt",
+    "rating": 3,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Johnny",
+    "lastName": "Depp",
+    "rating": 47,
+    "oscarPrized": false
+  },
+  {
+    "firstName": "Cate",
+    "lastName": "Blanchett",
+    "rating": 48,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Angelina",
+    "lastName": "Jolie",
+    "rating": 2,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Denzel",
+    "lastName": "Washington",
+    "rating": 10,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Nicole",
+    "lastName": "Kidman",
+    "rating": 51,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Russell",
+    "lastName": "Crowe",
+    "rating": 33,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Sean",
+    "lastName": "Penn",
+    "rating": 28,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Charlize",
+    "lastName": "Theron",
+    "rating": 44,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Joaquin",
+    "lastName": "Phoenix",
+    "rating": 55,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Scarlett",
+    "lastName": "Johansson",
+    "rating": 36,
+    "oscarPrized": false
+  },
+  {
+    "firstName": "Christian",
+    "lastName": "Bale",
+    "rating": 17,
+    "oscarPrized": true
+  },
+  {
+    "firstName": "Hugh",
+    "lastName": "Jackman",
+    "rating": 68,
+    "oscarPrized": false
+  },
+  {
+    "firstName": "Jennifer",
+    "lastName": "Aniston",
+    "rating": 19,
+    "oscarPrized": false
+  },
+  {
+    "firstName": "Will",
+    "lastName": "Smith",
+    "rating": 29,
+    "oscarPrized": false
+  }
+]
