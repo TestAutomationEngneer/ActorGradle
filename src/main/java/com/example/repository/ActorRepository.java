@@ -62,4 +62,8 @@ public class ActorRepository {
     public boolean deleteById(Long id) {
         return actors.removeIf(actor -> actor.getId() == id);
     }
+
+    public void deleteAll() {
+        actors.clear();
+    }
 }

@@ -1,0 +1,61 @@
+{
+  "consumer": {
+    "name": "movie"
+  },
+  "interactions": [
+    {
+      "description": "GET request for actor",
+      "key": "63b23e0e",
+      "pending": false,
+      "providerStates": [
+        {
+          "name": "Tomasz Karolak exists"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/actors/99"
+      },
+      "response": {
+        "body": {
+          "content": {
+            "firstName": "Tomasz"
+          },
+          "contentType": "application/json",
+          "encoded": false
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json"
+          ]
+        },
+        "matchingRules": {
+          "body": {
+            "$.firstName": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          }
+        },
+        "status": 200
+      },
+      "transport": "https",
+      "type": "Synchronous/HTTP"
+    }
+  ],
+  "metadata": {
+    "pact-jvm": {
+      "version": "4.6.2"
+    },
+    "pactSpecification": {
+      "version": "4.0"
+    }
+  },
+  "provider": {
+    "name": "actor"
+  }
+}

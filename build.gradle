@@ -49,14 +49,16 @@ dependencies {
     testImplementation("au.com.dius.pact.consumer:junit5:4.6.2")
     testImplementation("au.com.dius.pact.consumer:java8:4.1.42")
     testImplementation ("org.apache.httpcomponents:fluent-hc:4.5.14")
+    //pact provider
+    testImplementation("au.com.dius.pact.provider:junit5:4.6.2")
 }
 pact{
     broker{
-        pactBrokerUrl = 'http://'
+        pactBrokerUrl = 'http://localhost:9292/'
     }
     publish{
         pactDirectory = "$buildDir/pacts"
-        pactBrokerUrl = 'http://'
+        pactBrokerUrl = 'http://localhost:9292/'
 //        tags = 'pact'
         consumerVersion = 1.0
     }
@@ -69,7 +71,7 @@ task testContract(type: Test){
         includeTags 'pact'
     }
     ignoreFailures = true
-    systemProperty "pactbroker.host", "http://"
+    systemProperty "pactbroker.host", "http://localhost:9292/"
     systemProperty "pactbroker.port", "80"
     systemProperty "pactbroker.consumerversionselectors.tags", 1.0
     systemProperty "pact.provider.version", 1.0
