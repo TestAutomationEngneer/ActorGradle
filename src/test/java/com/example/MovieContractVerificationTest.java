@@ -6,6 +6,7 @@ import au.com.dius.pact.provider.junit5.PactVerificationInvocationContextProvide
 import au.com.dius.pact.provider.junitsupport.IgnoreNoPactsToVerify;
 import au.com.dius.pact.provider.junitsupport.Provider;
 import au.com.dius.pact.provider.junitsupport.State;
+import au.com.dius.pact.provider.junitsupport.loader.PactBroker;
 import au.com.dius.pact.provider.junitsupport.loader.PactFolder;
 import com.example.models.Actor;
 import com.example.repository.ActorRepository;
@@ -19,8 +20,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 @MicronautTest(transactional = false)
 @Provider("actor")
-//@PactBroker
-@PactFolder("pact")
+@PactBroker
+//@PactFolder("pact")
 @IgnoreNoPactsToVerify
 @Tag("pact")
 public class MovieContractVerificationTest {
