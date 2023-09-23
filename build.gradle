@@ -59,8 +59,8 @@ pact{
     publish{
         pactDirectory = "$buildDir/pacts"
         pactBrokerUrl = 'http://localhost:9292/'
-//        tags = 'pact'
-        consumerVersion = 1.0
+        tags = ['darek']
+        consumerVersion = 4.0
     }
 }
 
@@ -74,11 +74,8 @@ task testContract(type: Test){
     systemProperty "pactbroker.url", "http://localhost:9292/"
     systemProperty 'pact.provider.version', project.version
     systemProperty 'pact.verifier.publishResults', 'true'
-//    systemProperty "pactbroker.port", "80"
-//    systemProperty "pactbroker.consumerversionselectors.tags", 1.0
-//    systemProperty "pact.provider.version", 1.0
-//    systemProperty "pact.provider.tag", "movie_branch"
-//    systemProperty "pact.verifier.publishTesults", "movie_results"
+    systemProperty "pact.provider.version", 14.0  //provider version for pact broker
+    systemProperty "pact.provider.tag", "actor_provider_tag"
 }
 
 test{
