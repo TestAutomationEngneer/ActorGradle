@@ -74,7 +74,7 @@ task testContract(type: Test){
     systemProperty "pactbroker.url", "http://localhost:9292/"
     systemProperty 'pact.provider.version', project.version
     systemProperty 'pact.verifier.publishResults', 'true'
-    systemProperty "pact.provider.version", 14.0  //provider version for pact broker
+    systemProperty "pact.provider.version", 15.0  //provider version for pact broker
     systemProperty "pact.provider.tag", "actor_provider_tag"
 }
 
