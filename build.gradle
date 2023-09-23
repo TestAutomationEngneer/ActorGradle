@@ -6,7 +6,7 @@ plugins {
     id("au.com.dius.pact") version "4.4.2"
 }
 
-version = "0.1"
+version = "111.11"
 group = "com.example"
 
 repositories {
@@ -60,7 +60,6 @@ pact{
         pactDirectory = "$buildDir/pacts"
         pactBrokerUrl = 'http://localhost:9292/'
         tags = ['darek']
-        consumerVersion = 4.0
     }
 }
 
@@ -72,9 +71,8 @@ task testContract(type: Test){
     }
     ignoreFailures = true
     systemProperty "pactbroker.url", "http://localhost:9292/"
-    systemProperty 'pact.provider.version', project.version
+    systemProperty "pact.provider.version", project.version
     systemProperty 'pact.verifier.publishResults', 'true'
-    systemProperty "pact.provider.version", 15.0  //provider version for pact broker
     systemProperty "pact.provider.tag", "actor_provider_tag"
 }
 
